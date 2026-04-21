@@ -7,17 +7,20 @@ padding: 0;
 @media (max-width: 768px) {
     
     body {
-        flex-direction: column; /* empilha */
-        text-align: center;
+        flex-direction: column; 
+        align-items: center;
     }
 
     h1 {
+        text-align: center;
         margin: 20px 0;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .card {
         width: 90%;
+        margin: 0 auto;
+        padding: 20px;
     }
 }
 
@@ -134,3 +137,7 @@ select{
     margin-bottom: 10px;
 }
 
+input, button, select{
+    width: 100%;
+    max-width: 250px;
+}
