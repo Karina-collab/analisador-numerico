@@ -72,24 +72,15 @@ let res = document.getElementById('res')
     let media = soma / valores.length
 
     res.innerHTML = ''
+    res.innerHTML = '<h1 class="h2">Resultado da Análise</h1>'
     res.innerHTML+= `A soma total dos valores é ${soma} <br>`
     res.innerHTML+= `O maior valor da lista é ${maior} <br>`
     res.innerHTML+= `O menor valor da lista é ${menor} <br>`
-    res.innerHTML+= `A média dos valores é ${media} <br>`
+    res.innerHTML+= `A média dos valores é ${media.toFixed(1)} <br>`
 
 }
 
     
-    //Calcular a média
-
-    //valores = valores.length[0]
-
-    //media =  valores + valores + valores /3   (i + i + i / 3) //Calculo estático
-
-   //media = valores ++ / valores.length[0]
-
-   //resultado =  media
-
-
+    
 
 

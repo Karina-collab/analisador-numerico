@@ -4,17 +4,52 @@ padding: 0;
 
 }
 
+@media (max-width: 768px) {
+    
+    body {
+        flex-direction: column; /* empilha */
+        text-align: center;
+    }
+
+    h1 {
+        margin: 20px 0;
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
 body{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap; 
     background-color: rgb(31, 31, 22);
     background: linear-gradient(90deg, rgb(239, 175, 116), rgb(232, 30, 30));
     font-family: Arial, Helvetica, sans-serif;
+    
+
 }
 
-h1{
+h1 span{
+    display: block;
+
+}
+
+.h1{
+    background: -webkit-linear-gradient(#f30000, #fde401);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    font-size: 72px;
     text-align: center;
-    margin: 2%;
+    margin-left: 80px;
     color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 div#adicionar{
@@ -28,7 +63,7 @@ div#adicionar{
 label{
     color: rgb(91, 46, 3);
     font-weight: bolder;
-    font-size: 20px;
+    font-size: x-large;
     margin-bottom: 4%;
 }
 
@@ -49,7 +84,7 @@ button:hover{
 input{
     padding: 1%;
     border-radius: 30%;
-    border: none;
+    border: solid;
 
 }
 
@@ -71,13 +106,31 @@ select{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: rgb(91, 46, 3);
     font-size: larger;
     line-height: 150%;
     text-align: center;
     
 }
 
+#card{
+    
+    width: 90%;
+    max-width: 400px;
+    border-radius: 5%;
+    padding: 3%;
+    max-height: 500px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.683);
+    margin-left: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    
+    
+}
 
 
+.h2{
+    font-size: larger;
+    margin-bottom: 10px;
+}
 
